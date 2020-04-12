@@ -5,6 +5,13 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const cors = require('cors');
 
+const db = require('./config/database');
+
+// Test DB
+db.authenticate()
+  .then(() => console.log('Database connected'))
+  .catch((err) => console.log('Error: ', err));
+
 var indexRouter = require('./routes/index');
 var postsRouter = require('./routes/posts');
 
