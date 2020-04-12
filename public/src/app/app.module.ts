@@ -8,11 +8,13 @@ import { AppComponent } from './app.component';
 import { PostComponent } from './post/post.component';
 import { PostsComponent } from './posts/posts.component';
 import { WriteComponent } from './write/write.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: '/posts', pathMatch: 'full' },
   { path: 'posts', component: PostsComponent },
   { path: 'write', component: WriteComponent },
-  { path: '', redirectTo: '/posts', pathMatch: 'full' }
+  { path: '**', component: NotFoundComponent }
 ]
 
 @NgModule({
@@ -20,7 +22,8 @@ const routes: Routes = [
     AppComponent,
     PostComponent,
     PostsComponent,
-    WriteComponent
+    WriteComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
