@@ -1,0 +1,12 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+li {
+    margin-bottom: 20px;
+    background-color: rgb(255, 254, 219);
+}
+
+h2 {
+    color: rgb(3, 147, 214);
+}
