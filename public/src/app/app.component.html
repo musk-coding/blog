@@ -4,10 +4,10 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" routerLink="posts">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Write <span class="sr-only">(current)</span></a>
+          <a class="nav-link" routerLink="write">Write <span class="sr-only">(current)</span></a>
         </li>
       </ul>
     </div>
@@ -16,7 +16,7 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-12">
-      <app-posts></app-posts>
+      <router-outlet></router-outlet>
     </div>
   </div>
 </div>

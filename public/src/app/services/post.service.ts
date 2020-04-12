@@ -17,4 +17,8 @@ export class PostService {
   getAllPosts() : Observable<Post[]> {
     return this.http.get<Post[]>(environment.backUrl + apiUrl.posts);
   }
+
+  createPost(post: Post) : Observable<Post> {
+    return this.http.post<Post>(environment.backUrl + apiUrl.posts, post);
+  }
 }

@@ -1,6 +1,6 @@
 // Rest API URL list
 
 export const apiUrl = {
-    // Get All Posts
+    // Posts
     posts : "/posts",
 }

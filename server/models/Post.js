@@ -6,10 +6,10 @@ const Post = db.define('post', {
       type: Sequelize.STRING
     },
     text: {
-      type: Sequelize.STRING
+      type: Sequelize.TEXT
     },
-    text: {
-        type: Sequelize.TEXT
+    author: {
+        type: Sequelize.STRING
     }
 });
 
