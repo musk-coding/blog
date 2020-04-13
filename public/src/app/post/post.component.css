@@ -4,9 +4,10 @@
 
 li {
     margin-bottom: 20px;
-    background-color: rgb(255, 254, 219);
+    background-color: white;
 }
 
-h2 {
-    color: rgb(3, 147, 214);
+h1 {
+    text-align: center;
+    color: black;
 }
