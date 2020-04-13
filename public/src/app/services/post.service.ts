@@ -1,6 +1,6 @@
 import { apiUrl } from './../shared/api-url';
 import { Injectable } from '@angular/core';
-import { Post } from '../shared/Post';
+import { Post } from '../shared/models/Post.model';
 import { HttpClient } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
 import { Observable } from 'rxjs';
